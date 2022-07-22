@@ -8,7 +8,7 @@ body{
     display: flex;
     font-family: sans-serif;
     justify-content: center;
-    color: #f59d9d;
+    color: #ef7373;
 
 }
 
@@ -50,7 +50,7 @@ body{
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 15px;
     margin-top: 50px;
-    background-color:#f59d9d ;
+    background-color:#f9cfcf ;
 }
 
 .gameCell{
@@ -58,5 +58,19 @@ body{
     width: 100px;
     background-color:#FFF9CA;
     text-align: center;
-    cursor:pointer
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.x::after{
+    content: '✖';
+    color: #8874fb;
+    font-size: 80px;
+}
+
+.o::after{
+    content: '⭕';
+    font-size: 50px;
 }
